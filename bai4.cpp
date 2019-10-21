@@ -8,10 +8,11 @@ int main()
 	printf("\nNhap do dai 3 canh cua tam giac:\na = ");
 	scanf("%d", &a);
 	printf("b = ");
-	scanf("%d", &c);
+	scanf("%d", &b);
 	printf("c = ");
 	scanf("%d", &c);
 	
+	 printf("%d", KiemTraTamGiac(a, b, c));
 	if(KiemTraTamGiac(a, b, c) ==1)
 		printf("\nDay la mot tam giac. Chu vi cua tam giac nay la %d", a+b+b);
 	else
@@ -24,8 +25,8 @@ int main()
 //ham kiem tra tam giac
 int KiemTraTamGiac(int a, int b, int c)
 {
-	if(a+b>c && a+c>b && b+c>a)
-		return 1;
+	if(a+b<c || a+c<b || b+c<a)
+		return 0;
 	else 
-	return 0;
+	return 1;
 }
