@@ -1,6 +1,6 @@
 #include	<stdio.h>
 
-int BoiChungNN(int a, int b);
+int UocChungLN(int a, int b);
 
 int main()
 {
@@ -10,16 +10,16 @@ int main()
 	printf("\nNhap so nguyen thu hai: ");
 	scanf("%d", &b);
 
-	printf("Boi chung nho nhat cua %d va %d la: %d",a, b, BoiChungNN(a, b));
+	printf("\nUoc chung lon nhat cua %d va %d la: %d",a, b, UocChungLN(a, b));
 	return 0;
 	
 }
 //tin boi chung nho nhat
 
-int BoiChungNN(int a, int b)
+int UocChungLN(int a, int b)
 {
 	int i;
 	for(i=a; ; i++)
-		if(i%a==0 && i%b==0)
+		if(a%i==0 && b%i==0)
 			return i;
 }
