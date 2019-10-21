@@ -14,7 +14,7 @@ int main()
 	
 	 printf("%d", KiemTraTamGiac(a, b, c));
 	if(KiemTraTamGiac(a, b, c) ==1)
-		printf("\nDay la mot tam giac. Chu vi cua tam giac nay la %d", a+b+b);
+		printf("\nDay la mot tam giac. Chu vi cua tam giac nay la %d", a+b+c);
 	else
 		printf("\nDay khong phai tam giac");
 	
